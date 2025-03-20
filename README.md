@@ -11,11 +11,10 @@ This project implements a RESTful API to manage books, allowing users to perform
 4. [Concurrency Optimization](#concurrency-optimization)
 5. [Docker Setup](#docker-setup)
 6. [Unit Tests](#unit-tests)
-7. [Pagination](#pagination)
-8. [Kubernetes Deployment](#kubernetes-deployment)
-9. [How to Run the Project Locally](#how-to-run-the-project-locally)
-10. [How to Run the Project in Docker](#how-to-run-the-project-in-docker)
-11. [How to Run the Project on Kubernetes](#how-to-run-the-project-on-kubernetes)
+7. [Kubernetes Deployment](#kubernetes-deployment)
+8. [How to Run the Project Locally](#how-to-run-the-project-locally)
+9. [How to Run the Project in Docker](#how-to-run-the-project-in-docker)
+10. [How to Run the Project on Kubernetes](#how-to-run-the-project-on-kubernetes)
 
 ---
 
@@ -127,19 +126,6 @@ go test ./tests
 
 ---
 
-## Pagination
-
-The **GET /books** endpoint supports pagination. You can use the query parameters `limit` and `offset` to control the number of books returned.
-
-Example:
-
-```bash
-GET /books?limit=10&offset=20
-```
-
-This will return books starting from the 21st book and limit the results to 10.
-
----
 
 ## Kubernetes Deployment
 
